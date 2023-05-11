@@ -1,14 +1,28 @@
 {
+  "mixins": [
+    "node_modules/lodash-id"
+  ],
   "users": [
     {
+      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
-      "password": "password123"
+      "password": "password123",
+      "confirmPassword": "password123"
     },
     {
+      "id": 2,
       "name": "Jane Doe",
       "email": "jane.doe@example.com",
-      "password": "password456"
+      "password": "password456",
+      "confirmPassword": "password456"
+    },
+    {
+      "name": "Mohammed Sulthan",
+      "email": "mohammedsulthan441@gmail.com",
+      "password": "hello",
+      "confirmPassword": "hello",
+      "id": 3
     }
   ]
 }
