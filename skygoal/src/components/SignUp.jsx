@@ -61,6 +61,7 @@ export default function SignUp() {
         axios.post("http://localhost:3000/users", formDataObject)
             .then(response => {
                 console.log(response);
+                window.location.href = '/login'
             })
             .catch(error => {
                 console.log(error);

@@ -37,13 +37,31 @@ const useStyles = makeStyles((theme) => ({
 export default function Login() {
     const classes = useStyles();
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-        console.log({
-            email: data.get("email"),
-            password: data.get("password")
-        });
+        const email = data.get("email");
+        const password = data.get("password");
+
+        try {
+            // Send login request to server
+            const response = await axios.post("http://localhost:3000/users", {
+                email,
+                password,
+            });
+
+            // Handle successful login
+            if (response.status === 200) {
+                // Redirect to home page
+                window.location.href = "/home";
+                // Show success popup
+                alert("Login successful!");
+            }
+        } catch (error) {
+            // Handle login error
+            alert("Invalid email or password");
+            console.error(error);
+        }
     };
 
     return (

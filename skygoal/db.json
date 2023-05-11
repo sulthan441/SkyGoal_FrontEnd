@@ -23,6 +23,34 @@
       "password": "hello",
       "confirmPassword": "hello",
       "id": 3
+    },
+    {
+      "name": "tejaswini sunkari",
+      "email": "tejaswinisunkari441@gmail.com",
+      "password": "teju",
+      "confirmPassword": "teju",
+      "id": 4
+    },
+    {
+      "name": "tejaswini sunkari",
+      "email": "tejaswinisunkari441@gmail.com",
+      "password": "teju",
+      "confirmPassword": "teju",
+      "id": 5
+    },
+    {
+      "name": "Mohammed Sulthan",
+      "email": "mohammed441@gmail.com",
+      "password": "dddd",
+      "confirmPassword": "dddd",
+      "id": 6
+    },
+    {
+      "name": "Mohammed Sulthan",
+      "email": "mohammed441@gmail.com",
+      "password": "dddd",
+      "confirmPassword": "dddd",
+      "id": 7
     }
   ]
 }
